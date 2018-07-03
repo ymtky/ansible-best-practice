@@ -1,0 +1,8 @@
+---
+- name: create admin user
+  user:
+    name: '{{ item.name }}'
+    group: wheel
+    uid: '{{ item.uid }}'
+    ssh_key_file: '{{item.ssh_key}}'
+  with_items: "{{ admin_users }}"

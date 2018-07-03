@@ -1,0 +1,5 @@
+---
+admin_users:
+  - name: "admin"
+  - uid: 1111
+  - ssh_key: xxxxxxxxxx
